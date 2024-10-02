@@ -16,15 +16,6 @@
                     <input type="password" placeholder="Senha">
                 </div>
                 <div class="additionals">
-                    <div class="checkbox-wrapper-23">
-                        <input type="checkbox" id="check-23"/>
-                        <label for="check-23" style="--size: 30px">
-                        <svg viewBox="0,0,50,50">
-                            <path d="M5 30 L 20 45 L 45 5"></path>
-                        </svg>
-                        </label>
-                        <p>Lembrar conta</p>
-                    </div>
                     <p>Esqueceu a senha?</p>
                 </div>
                 <div class="login">
@@ -42,10 +33,9 @@
 <style scoped>
 
 main {
-    width: 30vw;
-    height: 96vh;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 20px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
 .form {
@@ -58,7 +48,7 @@ main {
 
 .cabecalho > img {
     margin: auto;
-    width: 6vw;
+    width: 25vw;
     margin-bottom: 2vh;
 }
 
@@ -69,9 +59,9 @@ main {
 }
 
 .inputs input {
-    margin-bottom: 2vh;
-    height: 4vh;
-    width: 20vw;
+    margin-bottom: 3vh;
+    height: 6vh;
+    width: 80vw;
     padding: 0 0 0 1vw;
     border: 0;
     border-bottom: 2px rgb(52, 52, 52) solid;
@@ -83,64 +73,11 @@ main {
     padding: 1vh 0 0 0;
 }
 
-.checkbox-wrapper-23 {
-    display: flex;
-    align-items: center;
-    width: 8vw;
-    justify-content: space-between;
-}
-
-.checkbox-wrapper-23 *, .checkbox-wrapper-23 *:after, .checkbox-wrapper-23 *:before {
-  box-sizing: border-box;
-}
-
-.checkbox-wrapper-23 input {
-  position: absolute;
-  opacity: 0;
-}
-  
-.checkbox-wrapper-23 input:checked + label svg path {
-  stroke-dashoffset: 0;
-}
-  
-.checkbox-wrapper-23 input:focus + label {
-  transform: scale(1.03);
-}
-
-.checkbox-wrapper-23 input + label {
-  display: block;
-  border: 2px solid rgb(52, 52, 52);
-  width: 1.2vw;
-  height: 2.3vh;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all .2s ease;
-}
-  
-.checkbox-wrapper-23 input + label:active {
-  transform: scale(1.05);
-  border-radius: 8px;
-}
-  
-.checkbox-wrapper-23 input + label svg {
-  pointer-events: none;
-  padding: 5%;
-}
-
-.checkbox-wrapper-23 input + label svg path {      
-  fill: none;     
-  stroke: #333;
-  stroke-width: 4px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 100;
-  stroke-dashoffset: 101;
-  transition: all 250ms cubic-bezier(1,0,.37,.91);
-}
-
 .additionals p {
-    margin: 0;
-    font-size: small;
+    margin: 0 0 0 2vw;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #18161e;
 }
 
 
@@ -151,8 +88,8 @@ main {
 }
 
 .login button {
-    width: 14vw;
-    height: 6vh;
+    width: 60vw;
+    height: 7vh;
     background-color: #585274;
     color: azure;
     font-size: x-large;
@@ -176,13 +113,15 @@ p, h1 {
     font-family: "Judson", sans-serif;
     margin: 2vh 0 0 0;
     text-align: center;
+    color: #18161e;
 }
 
 .registrar {
-    margin-top: 22vh;
+    margin-top: 20vh;
 }
 
 .registrar span {
+    font-size: medium;
     font-weight: bold;
     color: #585274;
 }
