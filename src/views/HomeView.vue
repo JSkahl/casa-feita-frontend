@@ -1,5 +1,7 @@
 <script setup>
-import isPortrait from "@/composables/orientation.js"
+import { useOrientation } from "@/composables/orientation.js"
+
+const { isPortrait } = useOrientation()
 </script>
 
 <template>
