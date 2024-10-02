@@ -1,12 +1,8 @@
 <script setup>
-import { useOrientation } from "@/composables/orientation.js"
-
-const { isPortrait } = useOrientation()
 </script>
 
 <template>
-  <div v-if="isPortrait">Portrait</div>
-  <div v-else>Landscape</div>
+  <h1>Home</h1>
 </template>
 
 <style scoped>
