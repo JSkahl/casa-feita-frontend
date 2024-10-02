@@ -1,8 +1,8 @@
 <script setup>
-import DefaultLoginDesktop from '@/components/auth/Desktop/DefaultLoginDesktop.vue';
+import DefaultLoginMobile from '@/components/auth/Mobile/DefaultLoginMobile.vue';
 </script>
 
 <template>
-    <DefaultLoginDesktop />
+    <DefaultLoginMobile />
     <RouterView />
 </template>
