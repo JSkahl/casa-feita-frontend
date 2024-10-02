@@ -1,9 +1,8 @@
 <script setup>
-import DefaultLoginDesktop from "@/components/Autenticação/Desktop/DefaultLoginDesktop.vue"
 </script>
 
 <template>
-  <DefaultLoginDesktop />
+  aa
 </template>
 
 <style scoped>
