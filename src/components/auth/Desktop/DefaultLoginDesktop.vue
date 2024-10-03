@@ -46,6 +46,8 @@ main {
     height: 96vh;
     box-shadow: 0px 0px 10px black;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .form {
