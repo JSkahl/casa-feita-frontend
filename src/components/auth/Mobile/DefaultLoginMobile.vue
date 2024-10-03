@@ -24,7 +24,7 @@
             </form>
 
             <div class="registrar">
-                <p>Não tem uma conta? <span>Registre-se</span></p>
+                <p>Não tem uma conta? <span>Registre-se</span>!</p>
             </div>
         </div>
     </main>
@@ -36,6 +36,7 @@ main {
     display: flex;
     width: 100vw;
     height: 100vh;
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
 }
