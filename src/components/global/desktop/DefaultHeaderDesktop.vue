@@ -4,9 +4,7 @@ import CogOutline from 'vue-material-design-icons/CogOutline.vue';
 import HeartOutline from 'vue-material-design-icons/HeartOutline.vue';
 import AccountCircleOutline from 'vue-material-design-icons/AccountCircleOutline.vue'
 import FilterOutline from 'vue-material-design-icons/FilterOutline.vue'
-import Magnify from 'vue-material-design-icons/Magnify.vue'
-
-
+// import Magnify from 'vue-material-design-icons/Magnify.vue'
 
 </script>
 
