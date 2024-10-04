@@ -1,8 +1,9 @@
 <script setup>
+import DefaultProductDesktop from '@/components/product/desktop/DefaultProductDesktop.vue'
 </script>
 
 <template>
-    <h1>Produtos</h1>
+    <DefaultProductDesktop />
     <RouterView />
 </template>
 

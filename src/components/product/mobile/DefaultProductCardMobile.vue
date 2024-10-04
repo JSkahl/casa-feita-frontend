@@ -1,5 +1,4 @@
 <script setup>
-import HeartOutline from 'vue-material-design-icons/HeartOutline.vue';
 import StarOutline from 'vue-material-design-icons/StarOutline.vue'
 </script>
 
