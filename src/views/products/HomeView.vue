@@ -1,10 +1,9 @@
 <script setup>
-import DefaultProductCardDesktop from '@/components/product/desktop/DefaultProductCardDesktop.vue';
+import DefaultProductCardMobile from '@/components/product/mobile/DefaultProductCardMobile.vue';
 </script>
 
 <template>
-  <DefaultProductCardDesktop />
-  <RouterView />
+  <h1>Home</h1>
 </template>
 
 <style scoped>
