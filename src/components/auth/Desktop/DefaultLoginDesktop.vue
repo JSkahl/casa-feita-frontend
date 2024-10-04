@@ -5,7 +5,7 @@
     <main>
         <div class="form">
             <div class="cabecalho">
-                <img src="/public/logo.png" alt="">
+                <img src="../../../assets/logo.png" alt="">
                 <h1>Bem-vindo de volta!</h1>
                 <p>Por favor, insira suas informações</p>
             </div>
