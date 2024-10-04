@@ -33,7 +33,7 @@
             </form>
 
             <div class="registrar">
-                <p>Não tem uma conta? <span>Registre-se</span>!</p>
+                <p>Não tem uma conta? <span><router-link to="/register">Registre-se</router-link></span>!</p>
             </div>
         </div>
     </main>

@@ -23,7 +23,7 @@
             </form>
 
             <div class="registrar">
-                <p>Já tem uma conta? <span>Entre</span>!</p>
+                <p>Já tem uma conta? <span><router-link to="/login">Entre</router-link></span>!</p>
             </div>
         </div>
     </main>
