@@ -13,7 +13,7 @@ import Magnify from 'vue-material-design-icons/Magnify.vue'
                 <cart-outline :size="40"/>
             </div>
                 <div class="center">
-                    <img src="/public/logo.png" alt="">
+                    <img src="../../../assets/logo.png" alt="">
                 </div>
             <div class="right">
                 <magnify :size="40"/>
