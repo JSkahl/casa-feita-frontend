@@ -1,5 +1,4 @@
 <script setup>
-import DefaultProductCardMobile from '@/components/product/mobile/DefaultProductCardMobile.vue';
 </script>
 
 <template>

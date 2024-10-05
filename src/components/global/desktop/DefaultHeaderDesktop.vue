@@ -37,12 +37,14 @@ import FilterOutline from 'vue-material-design-icons/FilterOutline.vue'
 <style scoped>
 header {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     padding: 0 1vw;
     background-color: #F1F1F1;
     height: 8vh;
-    margin: 0.3%;
+    width: 97%;
+    margin: 0.3% 0 2% 0.45%;
     border-radius: 10px;
     box-shadow: 0 0 7px black;
 }

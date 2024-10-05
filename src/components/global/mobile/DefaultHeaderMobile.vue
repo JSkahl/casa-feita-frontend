@@ -25,13 +25,14 @@ import Magnify from 'vue-material-design-icons/Magnify.vue'
 
 <style scoped>
 header {
-    width: 95%;
+    position: fixed;
+    z-index: 2;
+    bottom: 1.5%;
+    left: 2.5%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    left: 2.5%;
-    bottom: 1%;
     align-items: center;
+    width: 95%;
     height: 8vh;
     border-radius: 10px;
     box-shadow: 0 0 7px black;

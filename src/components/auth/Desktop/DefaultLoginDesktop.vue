@@ -33,7 +33,7 @@
             </form>
 
             <div class="registrar">
-                <p>Não tem uma conta? <span>Registre-se</span>!</p>
+                <p>Não tem uma conta? <span><router-link to="/register">Registre-se</router-link></span>!</p>
             </div>
         </div>
     </main>
@@ -48,6 +48,8 @@ main {
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
+    margin: 1%;
+    background-color: rgb(249, 248, 248);
 }
 
 .form {
@@ -77,6 +79,7 @@ main {
     padding: 0 0 0 1vw;
     border: 0;
     border-bottom: 2px rgb(52, 52, 52) solid;
+    background-color: rgb(249, 248, 248);
 }
 
 .additionals {
