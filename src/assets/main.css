@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #E3E3E3;
+}
+
+p, h1, h2, h3, h5, svg {
+    color: #262626;
+}
