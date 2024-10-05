@@ -22,7 +22,7 @@ import StarOutline from 'vue-material-design-icons/StarOutline.vue';
     </main>
 </template>
 
-<style>
+<style scoped>
 main {
     margin: auto;
     padding: 1%;

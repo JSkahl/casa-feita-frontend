@@ -181,8 +181,5 @@ import StarOutline from 'vue-material-design-icons/StarOutline.vue';
         color: white;
         background-color: #585274;
     }
-
-   .buy button:hover {
-        background-color: #4a4560;
-    }
+    
 </style>
