@@ -1,9 +1,9 @@
 <script setup>
-import DefaultProductDesktop from '@/components/product/desktop/DefaultProductDesktop.vue'
+import DefaultProductMobile from '@/components/product/mobile/DefaultProductMobile.vue';
 </script>
 
 <template>
-    <DefaultProductDesktop />
+    <DefaultProductMobile />
     <RouterView />
 </template>
 
