@@ -3,7 +3,11 @@ import DefaultHeaderDesktop from '@/components/global/desktop/DefaultHeaderDeskt
 </script>
 
 <template>
-    <DefaultHeaderDesktop />
+    <main>
+        <DefaultHeaderDesktop />
+    
+        <RouterView/>
+    </main>
 </template>
 
 <style scoped></style>

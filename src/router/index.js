@@ -18,6 +18,11 @@ const router = createRouter({
           name: 'product',
           component: () => import("@/views/products/ProductView.vue"),
         },
+        {
+          path: '/profile',
+          name: 'profile',
+          component: () => import('@/views/profile/ProfileView.vue'),
+        },
       ]
     },
     {
