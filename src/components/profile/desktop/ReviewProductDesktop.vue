@@ -1,5 +1,6 @@
 <script setup>
 import cadeira from '@/assets/cadeira.png';
+import StarOutline from 'vue-material-design-icons/StarOutline.vue';
 
 const props = defineProps({
   foto: {
@@ -13,37 +14,91 @@ const props = defineProps({
     <div class="review-products-container">
       <div class="review-product">
         <img :src="props.foto" alt="Foto da cadeira" class="foto-cadeira" />
-        <p>Cadeira almofadada</p>
-        <button>Ver</button>
+        <div class="product-details">
+          <h3>Cadeira almofadada</h3>
+          <div class="stars">
+            <star-outline :size="24" />
+            <star-outline :size="24" />
+            <star-outline :size="24" />
+            <star-outline :size="24" />
+            <star-outline :size="24" />
+          </div>
+          <button class="product-button">Ver</button>
+        </div>
       </div>
       <div class="review-product">
         <img :src="props.foto" alt="Foto da cadeira" class="foto-cadeira" />
-        <p>Cadeira almofadada</p>
-        <button>Ver</button>
+        <div class="product-details">
+          <h3>Cadeira almofadada</h3>
+          <div class="stars">
+            <star-outline :size="24" />
+            <star-outline :size="24" />
+            <star-outline :size="24" />
+            <star-outline :size="24" />
+            <star-outline :size="24" />
+          </div>
+          <button class="product-button">Ver</button>
+        </div>
       </div>
     </div>
-  </template>
-  
-  <style scoped>
-  .review-products-container {
-    display: flex; 
-    flex-direction: column; 
-  }
-  
-  .review-product {
-    background-color: #f9f9f9; 
-    padding: 40px; 
-    width: 100%; 
-    max-width: 400px; 
-    border-radius: 10px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-    margin-bottom: 15px; 
-    text-align: center; 
-  }
-  
-  .foto-cadeira {
-    width: 100px; 
-    height: auto; 
-  }
-  </style>
-  
+</template>
+
+<style scoped>
+.review-products-container {
+  display: flex; 
+  flex-direction: column;
+  width: 100%;
+}
+
+.review-product {
+  display: flex; 
+  align-items: flex-start;
+  background-color: #f9f9f9; 
+  padding: 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 34px; 
+  width: 100%; 
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  margin-left: 15px;
+  height: 150px; 
+}
+
+.foto-cadeira {
+  border-radius: 10%;
+  width: 150px; 
+  height: 150px; 
+}
+
+.product-details h3 {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.stars star-outline {
+  color: #FFD700; /* Cor dourada para as estrelas */
+}
+
+.product-button {
+  background-color: #2f28b4; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px; 
+  font-size: 14px;
+  cursor: pointer;
+  width: 150px; 
+  text-align: center;
+  align-self: flex-start;
+}
+</style>

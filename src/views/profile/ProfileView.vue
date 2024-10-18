@@ -15,10 +15,13 @@ const { breakpoint } = useMonitor();
     <div class="profile">
       <div v-if="breakpoint === 'lg' || breakpoint === 'xl'">
         <ProfileViewDesktop />
-        <div class="review-card">
-          <div class="review-pair">
-            <ReviewDesktop />
-            <ReviewProductDesktop />
+        <div class="reviews-container">
+          <h1 class="avaliacoes-title">Avaliações</h1>
+          <div class="review-card">
+            <div class="review-pair">
+              <ReviewDesktop />
+              <ReviewProductDesktop />
+            </div>
           </div>
         </div>
       </div>
@@ -29,23 +32,29 @@ const { breakpoint } = useMonitor();
         <ReviewProductMobile />
       </div>
     </div>
-  </template>
-  
-  <style scoped>
-  .review-card {
-    display: flex;
-    flex-direction: column; 
-    gap: 10px; 
-  }
-  
-  .review-pair {
-    display: flex; 
-    gap: 10px; 
-  }
-  
-  .review-pair > * {
-    flex: 1; 
-    box-sizing: border-box; 
-  }
-  </style>
-  
+</template>
+
+<style scoped>
+.reviews-container {
+  padding: 30px 20px; 
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.review-pair {
+  display: flex; 
+  gap: 20px; 
+}
+
+.avaliacoes-title {
+  margin: 40px 0 10px;
+  font-size: 30px; 
+  font-weight: bold; 
+}
+</style>
