@@ -34,18 +34,18 @@ const { breakpoint } = useMonitor();
   <style scoped>
   .review-card {
     display: flex;
-    flex-direction: column; /* Mantém os componentes em coluna */
-    gap: 10px; /* Espaçamento entre as linhas */
+    flex-direction: column; 
+    gap: 10px; 
   }
   
   .review-pair {
-    display: flex; /* Mantém os componentes lado a lado */
-    gap: 10px; /* Espaçamento entre os componentes */
+    display: flex; 
+    gap: 10px; 
   }
   
   .review-pair > * {
-    flex: 1; /* Faz com que ambos os componentes ocupem o mesmo espaço */
-    box-sizing: border-box; /* Para garantir que padding e margin sejam considerados no tamanho */
+    flex: 1; 
+    box-sizing: border-box; 
   }
   </style>
   
