@@ -8,6 +8,7 @@ const props = defineProps({
   },
 });
 </script>
+
 <template>
   <div class="container">
     <div class="profile">
@@ -33,10 +34,10 @@ const props = defineProps({
   display: flex;
   align-items: center;
   background-color: #f4f4f4;
-  padding: 45px; 
+  padding: 3%; 
   border-radius: 15px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 90%; 
   max-width: 1200px; 
 }
 
@@ -48,9 +49,10 @@ const props = defineProps({
 
 .foto-profile {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  width: 8vw; 
+  height: 8vw; 
+  min-width: 80px;
+  min-height: 80px; 
 }
 
 .info {
@@ -63,13 +65,11 @@ const props = defineProps({
 
 .info h2 {
   margin: 0;
-  font-size: 2.0rem;
-  font-weight: bold;
+  font-size: 2rem; 
 }
 
 .info h3 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.4rem; 
 }
-
 </style>

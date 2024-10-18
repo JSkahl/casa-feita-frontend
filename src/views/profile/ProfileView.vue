@@ -36,22 +36,21 @@ const { breakpoint } = useMonitor();
 
 <style scoped>
 .reviews-container {
-  padding: 30px 20px; 
+  padding: 30px 20px;  
 }
 
 .review-card {
   display: flex;
   flex-direction: column; 
   gap: 20px; 
-  width: 100%;
-  max-width: 1200px; 
+ 
 }
 
 .review-pair {
   display: flex; 
   gap: 20px; 
+  align-items: flex-start;
 }
-
 .avaliacoes-title {
   margin: 40px 0 10px;
   font-size: 30px; 

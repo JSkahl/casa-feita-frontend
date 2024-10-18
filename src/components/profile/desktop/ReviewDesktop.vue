@@ -35,17 +35,16 @@ const props = defineProps({
 <style scoped>
 .review-card {
   width: 100%;
+  box-sizing: border-box; 
 }
 
-h3{
-    font-size: 26px;
-}
+
 
 .review-info {
   display: flex;
   align-items: flex-start;
   background-color: #f9f9f9; 
-  padding: 55px; 
+  padding: 10%;
   border-radius: 10px; 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px; 
@@ -53,8 +52,8 @@ h3{
 
 .foto-profile {
   border-radius: 50%;
-  width: 40px; 
-  height: 40px; 
+  width: 10%;
+  height: auto; 
   margin-right: 15px; 
 }
 
@@ -62,7 +61,13 @@ h3{
   display: flex;
   flex-direction: column; 
   justify-content: flex-start; 
+  flex-grow: 1; 
 }
+
+h3 {
+    font-size: 26px;
+}
+
 .header {
   display: flex;
   align-items: center; 

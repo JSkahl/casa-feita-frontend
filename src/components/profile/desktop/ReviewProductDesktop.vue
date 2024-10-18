@@ -54,13 +54,11 @@ const props = defineProps({
   display: flex; 
   align-items: flex-start;
   background-color: #f9f9f9; 
-  padding: 30px; 
+  padding: 6%; 
   border-radius: 10px; 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
   margin-bottom: 34px; 
-  width: 100%; 
 }
-
 .product-details {
   display: flex;
   flex-direction: column;
@@ -77,7 +75,6 @@ const props = defineProps({
 
 .product-details h3 {
   font-size: 17px;
-  margin-bottom: 5px;
 }
 
 .stars {
@@ -85,9 +82,6 @@ const props = defineProps({
   align-items: center;
 }
 
-.stars star-outline {
-  color: #FFD700; /* Cor dourada para as estrelas */
-}
 
 .product-button {
   background-color: #2f28b4; 
@@ -99,6 +93,6 @@ const props = defineProps({
   cursor: pointer;
   width: 150px; 
   text-align: center;
-  align-self: flex-start;
+  
 }
 </style>
