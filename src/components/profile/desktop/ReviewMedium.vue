@@ -43,16 +43,16 @@ const props = defineProps({
   align-items: flex-start;
   background-color: #f9f9f9; 
   padding: 5%; 
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
-  margin-bottom: 10px; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; 
 }
 
 .foto-profile {
   border-radius: 50%;
-  width: 15%; 
+  width: 12%; 
   height: auto; 
-  margin-right: 10px; 
+  margin-right: 15px; 
 }
 
 .review-content {
@@ -63,12 +63,12 @@ const props = defineProps({
 }
 
 h3 {
-    font-size: 20px; 
+    font-size: 22px; 
 }
 
 .header {
   display: flex;
   align-items: center; 
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 </style>

@@ -34,11 +34,11 @@ const props = defineProps({
   display: flex;
   align-items: center;
   background-color: #f4f4f4;
-  padding: 8%; 
-  border-radius: 10px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  width: 95%; 
-  max-width: 400px; 
+  padding: 5%; 
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 90%; 
+  max-width: 800px; 
 }
 
 .header {
@@ -49,10 +49,10 @@ const props = defineProps({
 
 .foto-profile {
   border-radius: 50%;
-  width: 20vw; 
-  height: 20vw; 
-  min-width: 50px;
-  min-height: 50px;
+  width: 12vw; 
+  height: 12vw; 
+  min-width: 60px; 
+  min-height: 60px; 
 }
 
 .info {
@@ -65,11 +65,11 @@ const props = defineProps({
 
 .info h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .info h3 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 </style>
