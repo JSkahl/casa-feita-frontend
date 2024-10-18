@@ -11,6 +11,7 @@ const props = defineProps({
 
 <template>
     <div class="review-card">
+    <h1>Avaliações</h1>
       <div class="review-info">
         <img :src="props.foto" alt="Foto de profile" class="foto-profile" />
         <div>
@@ -27,3 +28,24 @@ const props = defineProps({
       </div>     
     </div>    
   </template>
+
+<style scoped>
+
+.review-info {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9; 
+  padding: 40px; 
+  width: 30%;
+  border-radius: 10px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; 
+}
+
+.foto-profile {
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px; 
+  margin-right: 15px; 
+}
+</style>

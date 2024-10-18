@@ -12,25 +12,40 @@ const { breakpoint } = useMonitor();
 </script>
 
 <template>
-  <div class="profile">
-    <div v-if="breakpoint === 'lg' || breakpoint === 'xl'">
-      <ProfileViewDesktop />
-      <ReviewDesktop />
-      <ReviewProductDesktop />
+    <div class="profile">
+      <div v-if="breakpoint === 'lg' || breakpoint === 'xl'">
+        <ProfileViewDesktop />
+        <div class="review-card">
+          <div class="review-pair">
+            <ReviewDesktop />
+            <ReviewProductDesktop />
+          </div>
+        </div>
+      </div>
+  
+      <div v-else-if="breakpoint === 'sm' || breakpoint === 'xs'">
+        <ProfileViewMobile />
+        <ReviewMobile />
+        <ReviewProductMobile />
+      </div>
     </div>
-
-    <div v-else-if="breakpoint === 'sm' || breakpoint === 'xs'">
-      <ProfileViewMobile />
-      <ReviewMobile />
-      <ReviewProductMobile />
-    </div>
-  </div>
-</template>
-
-<style scoped>
-
-    .profile{
-        display: flex;
-    }
-
-</style>
+  </template>
+  
+  <style scoped>
+  .review-card {
+    display: flex;
+    flex-direction: column; /* Mantém os componentes em coluna */
+    gap: 10px; /* Espaçamento entre as linhas */
+  }
+  
+  .review-pair {
+    display: flex; /* Mantém os componentes lado a lado */
+    gap: 10px; /* Espaçamento entre os componentes */
+  }
+  
+  .review-pair > * {
+    flex: 1; /* Faz com que ambos os componentes ocupem o mesmo espaço */
+    box-sizing: border-box; /* Para garantir que padding e margin sejam considerados no tamanho */
+  }
+  </style>
+  
