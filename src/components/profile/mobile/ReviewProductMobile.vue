@@ -11,43 +11,44 @@ const props = defineProps({
 </script>
 
 <template>  
-    <div class="review-products-container">
-      <div class="review-product">
-        <img :src="props.foto" alt="Foto da cadeira" class="foto-cadeira" />
-        <div class="product-details">
-          <h3>Cadeira almofadada</h3>
-          <div class="stars">
-            <star-outline :size="20" /> 
-            <star-outline :size="20" />
-            <star-outline :size="20" />
-            <star-outline :size="20" />
-            <star-outline :size="20" />
-          </div>
-          <button class="product-button">Ver</button>
+  <div class="review-products-container">
+    <div class="review-product">
+      <img :src="props.foto" alt="Foto da cadeira" class="foto-cadeira" />
+      <div class="product-details">
+        <h3>Cadeira almofadada</h3>
+        <div class="stars">
+          <star-outline :size="20" /> 
+          <star-outline :size="20" />
+          <star-outline :size="20" />
+          <star-outline :size="20" />
+          <star-outline :size="20" />
         </div>
-      </div>
-      <div class="review-product">
-        <img :src="props.foto" alt="Foto da cadeira" class="foto-cadeira" />
-        <div class="product-details">
-          <h3>Cadeira almofadada</h3>
-          <div class="stars">
-            <star-outline :size="20" />
-            <star-outline :size="20" />
-            <star-outline :size="20" />
-            <star-outline :size="20" />
-            <star-outline :size="20" />
-          </div>
-          <button class="product-button">Ver</button>
-        </div>
+        <button class="product-button">Ver</button>
       </div>
     </div>
+    <div class="review-product">
+      <img :src="props.foto" alt="Foto da cadeira" class="foto-cadeira" />
+      <div class="product-details">
+        <h3>Cadeira almofadada</h3>
+        <div class="stars">
+          <star-outline :size="20" />
+          <star-outline :size="20" />
+          <star-outline :size="20" />
+          <star-outline :size="20" />
+          <star-outline :size="20" />
+        </div>
+        <button class="product-button">Ver</button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
 .review-products-container {
   display: flex; 
   flex-direction: column;
-  width: 100%;
+  width: 90%;
+  margin: 20px auto;
 }
 
 .review-product {
@@ -58,6 +59,7 @@ const props = defineProps({
   border-radius: 10px; 
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
   margin-bottom: 20px; 
+  flex: 1;
 }
 
 .product-details {

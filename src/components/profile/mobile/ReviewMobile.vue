@@ -10,31 +10,32 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="review-card">
-      <div class="review-info">
-        <img :src="props.foto" alt="Foto de profile" class="foto-profile" />
-        <div class="review-content">
-          <div class="header">
-            <h3>Fábio Akita</h3>
-          </div>
-          <p>Ótimo produto! Encaixou certinho no meu escritório. <br> Pretendo comprar mais! <br> Recomendo!!</p>
+  <div class="review-card">
+    <div class="review-info">
+      <img :src="props.foto" alt="Foto de perfil" class="foto-profile" />
+      <div class="review-content">
+        <div class="header">
+          <h3>Fábio Akita</h3>
         </div>
+        <p>Ótimo produto! Encaixou certinho no meu escritório. <br> Pretendo comprar mais! <br> Recomendo!!</p>
       </div>
-      <div class="review-info">
-        <img :src="props.foto" alt="Foto de profile" class="foto-profile" />
-        <div class="review-content">
-          <div class="header">
-            <h3>Fábio Akita</h3>
-          </div>
-          <p>Ótimo produto! Encaixou certinho no meu escritório. <br> Pretendo comprar mais! <br> Recomendo!!</p>
+    </div>
+    <div class="review-info">
+      <img :src="props.foto" alt="Foto de perfil" class="foto-profile" />
+      <div class="review-content">
+        <div class="header">
+          <h3>Fábio Akita</h3>
         </div>
-      </div>    
+        <p>Ótimo produto! Encaixou certinho no meu escritório. <br> Pretendo comprar mais! <br> Recomendo!!</p>
+      </div>
     </div>    
+  </div>    
 </template>
 
 <style scoped>
 .review-card {
-  width: 100%;
+  width: 90%;
+  margin: 20px auto;
   box-sizing: border-box; 
 }
 
@@ -46,11 +47,12 @@ const props = defineProps({
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
   margin-bottom: 10px; 
+  flex: 1; 
 }
 
 .foto-profile {
   border-radius: 50%;
-  width: 15%; 
+  width: 10%; 
   height: auto; 
   margin-right: 10px; 
 }

@@ -12,12 +12,10 @@ const props = defineProps({
 <template>
   <div class="container">
     <div class="profile">
-      <div class="header">
-        <img :src="props.foto" alt="Foto de perfil" class="foto-profile" />
-        <div class="info">
-          <h2>Fábio Akita</h2>
-          <h3>2 Avaliações</h3>
-        </div>
+      <img :src="props.foto" alt="Foto de perfil" class="foto-profile" />
+      <div class="info">
+        <h2>Fábio Akita</h2>
+        <h3 class="avaliacao">2 Avaliações</h3>
       </div>
     </div>
   </div>
@@ -28,48 +26,55 @@ const props = defineProps({
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  margin: 20px auto;
 }
 
 .profile {
   display: flex;
   align-items: center;
   background-color: #f4f4f4;
-  padding: 8%; 
   border-radius: 10px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  width: 95%; 
-  max-width: 400px; 
-}
-
-.header {
-  display: flex;
-  align-items: center;
   width: 100%; 
+  padding: 10px; 
 }
 
 .foto-profile {
   border-radius: 50%;
-  width: 20vw; 
-  height: 20vw; 
-  min-width: 50px;
-  min-height: 50px;
+  width: 25%; 
+  height: auto; 
+  max-width: 100px; 
+  margin-right: 10px; 
 }
 
 .info {
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: flex-start; 
-  width: 100%; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-grow: 1; 
 }
 
 .info h2 {
   margin: 0;
   font-size: 1.5rem;
+  text-align: left; 
 }
 
-.info h3 {
+.avaliacao {
   margin: 0;
   font-size: 1rem;
+  text-align: right; 
+}
+
+@media (max-width: 600px) {
+  .info {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+  .avaliacao {
+    margin-top: 5px; 
+  }
 }
 </style>
