@@ -22,8 +22,8 @@ const { breakpoint } = useMonitor();
               <h1 class="avaliacoes-title">Avaliações</h1>
               <div class="review-card">
                   <div class="review-pair">
-                      <ReviewDesktop /> <!-- Agora ReviewDesktop vem primeiro -->
-                      <ReviewProductDesktop /> <!-- ReviewProductDesktop vem segundo -->
+                      <ReviewDesktop /> 
+                      <ReviewProductDesktop /> 
                   </div>
               </div>
           </div>
