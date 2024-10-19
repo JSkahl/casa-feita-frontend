@@ -15,39 +15,39 @@ const { breakpoint } = useMonitor();
 </script>
 
 <template>
-    <div class="profile">
+  <div class="profile">
       <div v-if="breakpoint === 'lg' || breakpoint === 'xl'">
-        <ProfileViewDesktop />
-        <div class="reviews-container">
-          <h1 class="avaliacoes-title">Avaliações</h1>
-          <div class="review-card">
-            <div class="review-pair">
-              <ReviewDesktop />
-              <ReviewProductDesktop />
-            </div>
+          <ProfileViewDesktop />
+          <div class="reviews-container">
+              <h1 class="avaliacoes-title">Avaliações</h1>
+              <div class="review-card">
+                  <div class="review-pair">
+                      <ReviewDesktop /> <!-- Agora ReviewDesktop vem primeiro -->
+                      <ReviewProductDesktop /> <!-- ReviewProductDesktop vem segundo -->
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
 
       <div v-else-if="breakpoint === 'md'">
-        <ProfileViewMedium />
-        <div class="reviews-container">
-          <h1 class="avaliacoes-title">Avaliações Medium</h1>
-          <div class="review-card">
-            <div class="review-pair">
-              <ReviewMedium />
-              <ReviewProductMedium />
-            </div>
+          <ProfileViewMedium />
+          <div class="reviews-container">
+              <h1 class="avaliacoes-title">Avaliações</h1>
+              <div class="review-card">
+                  <div class="review-pair">
+                      <ReviewMedium />
+                      <ReviewProductMedium />
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-  
+
       <div v-else-if="breakpoint === 'sm' || breakpoint === 'xs'">
-        <ProfileViewMobile />
-        <ReviewMobile />
-        <ReviewProductMobile />
+          <ProfileViewMobile />
+          <ReviewMobile />
+          <ReviewProductMobile />
       </div>
-    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -64,7 +64,15 @@ const { breakpoint } = useMonitor();
 .review-pair {
   display: flex; 
   gap: 20px; 
-  align-items: flex-start;
+  align-items: stretch; 
+  width: 100%;
+}
+
+.review-pair > * {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 }
 
 .avaliacoes-title {

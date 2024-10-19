@@ -64,8 +64,8 @@ const props = defineProps({
 }
 
 .info h2 {
-  margin: 0;
-  font-size: 2rem; 
+  margin-left: 2%;
+  font-size: 2.3rem; 
 }
 
 .info h3 {
