@@ -2,22 +2,22 @@
 import CartOutline from 'vue-material-design-icons/CartOutline.vue';
 import CogOutline from 'vue-material-design-icons/CogOutline.vue';
 import HeartOutline from 'vue-material-design-icons/HeartOutline.vue';
-import Magnify from 'vue-material-design-icons/Magnify.vue'
+import Magnify from 'vue-material-design-icons/Magnify.vue';
 </script>
 
 <template>
     <header>
         <div class="icons">
             <div class="left">
-                <heart-outline :size="40"/>
-                <cart-outline :size="40"/>
+                <heart-outline :size="40" />
+                <cart-outline :size="40" />
             </div>
-                <div class="center">
-                    <img src="../../../assets/logo.png" alt="">
-                </div>
+            <div class="center">
+                <img src="../../../assets/logo.png" alt="Logo" />
+            </div>
             <div class="right">
-                <magnify :size="40"/>
-                <cog-outline :size="40"/>
+                <magnify :size="40" />
+                <cog-outline :size="40" />
             </div>
         </div>
     </header>
@@ -46,7 +46,8 @@ header {
     cursor: pointer;
 }
 
-.left, .right {
+.left,
+.right {
     width: 40%;
     display: flex;
     align-items: center;
@@ -62,6 +63,8 @@ header {
 }
 
 img {
-    width: 12vw;
+    max-width: 80%; 
+    height: auto; 
+    max-height: 100%; 
 }
 </style>
