@@ -2,10 +2,8 @@
 import CartOutline from 'vue-material-design-icons/CartOutline.vue';
 import CogOutline from 'vue-material-design-icons/CogOutline.vue';
 import HeartOutline from 'vue-material-design-icons/HeartOutline.vue';
-import AccountCircleOutline from 'vue-material-design-icons/AccountCircleOutline.vue'
-import FilterOutline from 'vue-material-design-icons/FilterOutline.vue'
-// import Magnify from 'vue-material-design-icons/Magnify.vue'
-
+import AccountCircleOutline from 'vue-material-design-icons/AccountCircleOutline.vue';
+import Magnify from 'vue-material-design-icons/Magnify.vue';
 </script>
 
 <template>
@@ -16,7 +14,7 @@ import FilterOutline from 'vue-material-design-icons/FilterOutline.vue'
 
         <div class="pesquisa">
             <input type="text" placeholder="Pesquise...">
-            <button><filter-outline :size="36"/></button>
+            <button><magnify class="search-icon" /></button> 
         </div>
 
         <div class="opcoes">
@@ -49,8 +47,9 @@ header {
 }
 
 .logo img {
-    max-width: 100%; 
-    height: auto;
+    max-width: 65%;
+    max-height: 80%; 
+    height: auto; 
 }
 
 .opcoes {
@@ -75,20 +74,28 @@ header {
     padding: 0 2%;
     border: 0;
     border-radius: 20px 0 0 20px;
+    max-width: 100%; 
 }
 
 .pesquisa button {
     display: flex;
+    justify-content: center; 
     border-radius: 0 20px 20px 0;
     border: none;
     background-color: #EE7F5A;
     color: white;
-    width: 20%; 
+    width: 25%; 
     cursor: pointer;
+    height: 100%; 
 }
 
 .pesquisa button:hover {
     background-color: #c4694b;
+}
+
+.search-icon {
+    max-width: 50%; 
+    max-height: 50%;
 }
 
 .unlogged {
