@@ -4,6 +4,9 @@ import DefaultHeaderDesktop from '@/components/global/desktop/DefaultHeaderDeskt
 
 <template>
     <DefaultHeaderDesktop />
+    <main>
+        <router-view />
+    </main>
 </template>
 
 <style scoped></style>

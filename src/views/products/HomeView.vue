@@ -1,17 +1,9 @@
 <script setup>
-import CardHomeDesktop from '@/components/home/desktop/CardHomeDesktop.vue';
-import CardHomeMedium from '@/components/home/desktop/CardHomeMedium.vue';
-import CardHomeMobile from '@/components/home/mobile/CardHomeMobile.vue';
-
+import DefaultHome from '@/components/home/DefaultHome.vue';
 </script>
 
 <template>
-
-<CardHomeDesktop />
-<CardHomeMedium />
-<CardHomeMobile />
-
+    <DefaultHome />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
