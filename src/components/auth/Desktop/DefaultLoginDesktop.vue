@@ -25,7 +25,7 @@
                         </label>
                         <p>Lembrar conta</p>
                     </div>
-                    <p>Esqueceu a senha?</p>
+                    <router-link to="/password_reset">Esqueceu a senha?</router-link>
                 </div>
                 <div class="login">
                     <button>Login</button>

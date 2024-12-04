@@ -2,32 +2,27 @@
 </script>
 
 <template>
-    <main>
-        <div class="form">
-            <div class="cabecalho">
-                <img src="../../../assets/logo.png" alt="">
-                <h1>Bem-vindo de volta!</h1>
-                <p>Por favor, insira suas informações</p>
-            </div>
-
-            <form>
-                <div class="inputs">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Senha">
-                </div>
-                <div class="additionals">
-                    <router-link to="/password_reset">Esqueceu a senha?</router-link>
-                </div>
-                <div class="login">
-                    <button>Login</button>
-                </div>
-            </form>
-
-            <div class="registrar">
-                <p>Não tem uma conta? <span><router-link to="/register">Registre-se</router-link></span>!</p>
-            </div>
+      <main>
+      <div class="form">
+        <div class="cabecalho">
+          <img src="../../../assets/logo.png" alt="" />
+          <h1>Esqueceu sua senha?</h1>
+          <p>
+            Por-favor, insira seu email no campo abaixo para que possamos enviar um token de
+            recuperação
+          </p>
         </div>
-    </main>
+
+        <form>
+          <div class="inputs">
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="submit">
+            <button>Enviar</button>
+          </div>
+        </form>
+      </div>
+  </main>
 </template>
   
 <style scoped>
@@ -78,21 +73,13 @@ main {
     padding: 1vh 0 0 0;
 }
 
-.additionals p {
-    margin: 0 0 0 2vw;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #18161e;
-}
-
-
-.login {
+.submit {
     display: flex;
     justify-content: center;
     margin-top: 8vh;
 }
 
-.login button {
+.submit button {
     width: 60vw;
     height: 7vh;
     background-color: #585274;
@@ -104,7 +91,7 @@ main {
     cursor: pointer;
 }
 
-.login button:hover {
+.submit button:hover {
     background-color: #4a4560;
 }
 
