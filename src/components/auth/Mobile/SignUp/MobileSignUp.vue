@@ -4,7 +4,7 @@
 <template>
     <main>
         <div class="form">
-            <div class="cabecalho">
+            <div class="heading">
                 <img src="../../../assets/logo.png" alt="">
                 <h1>Bem-vindo a sua casa!</h1>
                 <p>Por-favor, insira suas informações para registrar-se.</p>
@@ -22,7 +22,7 @@
                 </div>
             </form>
 
-            <div class="registrar">
+            <div class="register">
                 <p>Já tem uma conta? <span><router-link to="/login">Entre</router-link></span>!</p>
             </div>
         </div>
@@ -32,13 +32,12 @@
 <style scoped>
 
 main {
-    width: 30vw;
-    height: 96vh;
-    box-shadow: 0px 0px 10px black;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
-    margin: 1%;
     background-color: rgb(249, 248, 248);
 }
 
@@ -50,9 +49,9 @@ main {
     padding: 2vw;
 }
 
-.cabecalho > img {
+.heading > img {
     margin: auto;
-    width: 6vw;
+    width: 25vw;
     margin-bottom: 2vh;
 }
 
@@ -63,13 +62,19 @@ main {
 }
 
 .inputs input {
-    margin-bottom: 2vh;
-    height: 4vh;
-    width: 20vw;
+    margin-bottom: 3vh;
+    height: 6vh;
+    width: 80vw;
     padding: 0 0 0 1vw;
     border: 0;
     border-bottom: 2px rgb(52, 52, 52) solid;
     background-color: rgb(249, 248, 248);
+}
+
+.additionals {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 0 0 0;
 }
 
 .login {
@@ -79,8 +84,8 @@ main {
 }
 
 .login button {
-    width: 14vw;
-    height: 6vh;
+    width: 60vw;
+    height: 7vh;
     background-color: #585274;
     color: azure;
     font-size: x-large;
@@ -94,7 +99,7 @@ main {
     background-color: #4a4560;
 }
 
-.cabecalho {
+.heading {
     display: flex;
     flex-direction: column;
     margin-bottom: 7vh;
@@ -104,9 +109,15 @@ p, h1 {
     font-family: "Judson", sans-serif;
     margin: 2vh 0 0 0;
     text-align: center;
+    color: #18161e;
 }
 
-.registrar span {
+.register {
+    margin-top: 20vh;
+}
+
+.register span {
+    font-size: medium;
     font-weight: bold;
     color: #585274;
 }

@@ -4,27 +4,26 @@
 <template>
     <main>
         <div class="form">
-            <div class="cabecalho">
+            <div class="heading">
                 <img src="../../../assets/logo.png" alt="">
-                <h1>Bem-vindo de volta!</h1>
-                <p>Por favor, insira suas informações</p>
+                <h1>Bem-vindo a sua casa!</h1>
+                <p>Por-favor, insira suas informações para registrar-se.</p>
             </div>
 
             <form>
                 <div class="inputs">
+                    <input type="text" placeholder="Nome">
                     <input type="email" placeholder="Email">
                     <input type="password" placeholder="Senha">
-                </div>
-                <div class="additionals">
-                    <p>Esqueceu a senha?</p>
+                    <input type="password" placeholder="Confirmar Senha">
                 </div>
                 <div class="login">
-                    <button>Login</button>
+                    <button>Registre-se</button>
                 </div>
             </form>
 
-            <div class="registrar">
-                <p>Não tem uma conta? <span><router-link to="/register">Registre-se</router-link></span>!</p>
+            <div class="register">
+                <p>Já tem uma conta? <span><router-link to="/login">Entre</router-link></span>!</p>
             </div>
         </div>
     </main>
@@ -33,12 +32,13 @@
 <style scoped>
 
 main {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 30vw;
+    height: 96vh;
+    box-shadow: 0px 0px 10px black;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
+    margin: 1%;
     background-color: rgb(249, 248, 248);
 }
 
@@ -50,9 +50,9 @@ main {
     padding: 2vw;
 }
 
-.cabecalho > img {
+.heading > img {
     margin: auto;
-    width: 25vw;
+    width: 6vw;
     margin-bottom: 2vh;
 }
 
@@ -63,28 +63,14 @@ main {
 }
 
 .inputs input {
-    margin-bottom: 3vh;
-    height: 6vh;
-    width: 80vw;
+    margin-bottom: 2vh;
+    height: 4vh;
+    width: 20vw;
     padding: 0 0 0 1vw;
     border: 0;
     border-bottom: 2px rgb(52, 52, 52) solid;
     background-color: rgb(249, 248, 248);
 }
-
-.additionals {
-    display: flex;
-    justify-content: space-between;
-    padding: 1vh 0 0 0;
-}
-
-.additionals p {
-    margin: 0 0 0 2vw;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #18161e;
-}
-
 
 .login {
     display: flex;
@@ -93,8 +79,8 @@ main {
 }
 
 .login button {
-    width: 60vw;
-    height: 7vh;
+    width: 14vw;
+    height: 6vh;
     background-color: #585274;
     color: azure;
     font-size: x-large;
@@ -108,7 +94,7 @@ main {
     background-color: #4a4560;
 }
 
-.cabecalho {
+.heading {
     display: flex;
     flex-direction: column;
     margin-bottom: 7vh;
@@ -118,15 +104,9 @@ p, h1 {
     font-family: "Judson", sans-serif;
     margin: 2vh 0 0 0;
     text-align: center;
-    color: #18161e;
 }
 
-.registrar {
-    margin-top: 20vh;
-}
-
-.registrar span {
-    font-size: medium;
+.register span {
     font-weight: bold;
     color: #585274;
 }
