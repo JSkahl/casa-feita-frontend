@@ -4,7 +4,7 @@ import DefaultReviewDesktop from '@/components/product/desktop/DefaultReviewDesk
 import DefaultProductMobile from '@/components/product/mobile/DefaultProductMobile.vue';
 import DefaultReviewMobile from '@/components/product/mobile/DefaultReviewMobile.vue';
 
-import { useScreen } from '@/composables/screen';
+import { useScreen } from '@/composables/screen/screen';
 
 const { isMobile } = useScreen();
 </script>
