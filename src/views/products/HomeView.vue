@@ -1,10 +1,13 @@
 <script setup>
+import DefaultProductCardDesktop from '@/components/product/desktop/DefaultProductCardDesktop.vue';
 
-import DefaultHome from '@/components/home/DefaultHome.vue';
+
+// import DefaultHome from '@/components/home/DefaultHome.vue';
 </script>
 
 <template>
-    <DefaultHome />
+    <DefaultProductCardDesktop />
+    <!-- <DefaultHome /> -->
 </template>
 
 <style scoped></style>

@@ -9,6 +9,7 @@ export const useProductStore = defineStore('produto', () => {
 
     async function getProducts() {
         products.value = await productService.getProducts()
+        console.log(products.value)
     };
 
     async function getProductsByCategory(category_id) {
