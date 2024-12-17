@@ -4,8 +4,7 @@ import DefaultHeaderMobile from '@/components/global/mobile/DefaultHeaderMobile.
 
 <template>
     <DefaultHeaderMobile />
-
-    <RouterView/>
+    <router-view />
 </template>
 
 <style scoped></style>
