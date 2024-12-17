@@ -1,45 +1,70 @@
+<script>
+import { ref } from 'vue';
+import banner from '@/assets/banner.png'; 
+import DefaultProductCardDesktop from "../../product/desktop/DefaultProductCardDesktop.vue"; 
+
+export default {
+  name: "HomePageLayout",
+  components: {
+    DefaultProductCardDesktop, 
+  },
+  setup() { 
+    const bannerImage = ref(banner); 
+
+    return {
+      bannerImage,
+    };
+  },
+};
+</script>
+
 <template>
   <section class="promo-banner">
-    aaa
-    <div class="image"></div>
+    <div class="image">
+
+      <img :src="bannerImage" alt="Banner" class="banner-image" />
+    </div>
   </section>
 
   <section class="grid">
     <div class="row">
-      <div v-for="item in 4" :key="'top-' + item" class="card">
-        aa
+      <div v-for="item in [1, 2, 3, 4]" :key="'top-' + item" class="card">
+        <DefaultProductCardDesktop />
       </div>
     </div>
     <div class="row">
-      <div v-for="item in 4" :key="'bottom-' + item" class="card">
-        aa
+      <div v-for="item in [1, 2, 3, 4]" :key="'bottom-' + item" class="card">
+        <DefaultProductCardDesktop />
       </div>
     </div>
   </section>
 </template>
 
-<script>
-export default {
-  name: "HomePageLayout",
-};
-</script>
-
 <style scoped>
 .promo-banner {
   background-color: #585274;
   border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  margin: 20px auto; 
+  padding: 0;
+  margin: 20px auto;
   width: 90%;
   max-width: 1156px;
-  height: 300px;
+  height: 400px;
   box-sizing: border-box;
 }
 
 .promo-banner .image {
-  width: 40%;
-  float: right;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.promo-banner .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .grid {
@@ -60,7 +85,7 @@ export default {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #FEFFD0;
   border-radius: 8px;
   width: 237px;
   height: 313px;
@@ -71,8 +96,6 @@ export default {
     width: 90%;
     padding: 20px;
   }
-
-  
 
   .card {
     width: 237px;
