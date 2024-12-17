@@ -1,8 +1,9 @@
 <script setup>
+import DefaultProductCardDesktop from '@/components/product/desktop/DefaultProductCardDesktop.vue';
 </script>
 
 <template>
-  <h1>Home</h1>
+  <DefaultProductCardDesktop />
 </template>
 
 <style scoped>

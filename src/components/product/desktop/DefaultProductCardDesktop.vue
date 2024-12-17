@@ -1,9 +1,35 @@
 <script setup>
+import { onMounted, watch } from 'vue';
+
 import HeartOutline from 'vue-material-design-icons/HeartOutline.vue';
-import StarOutline from 'vue-material-design-icons/StarOutline.vue'
+import StarOutline from 'vue-material-design-icons/StarOutline.vue';
+
+import { useProductStore } from '@/stores/product';
+
+const props = defineProps(['category_id']);
+const productStore = useProductStore();
+
+async function getProducts() {
+    if (props.category_id) {
+        await productStore.getProductsByCategory(props.category_id);
+    } else {
+        await productStore.getProducts();
+    }
+}
+
+watch(() => props.category_id, async () => {
+    await getProducts();
+});
+
+
+onMounted(async () => {
+    await getProducts();
+});
+
 </script>
 
 <template>
+    {{ productStore.nome }}
     <div class="card">
         <div class="card-content">
             <div class="fav-promo">
@@ -19,7 +45,7 @@ import StarOutline from 'vue-material-design-icons/StarOutline.vue'
             </div>
         
             <div class="infos">
-                <h3>Titulo</h3>
+                <h3>{{productStore.nome}}</h3>
 
                 <div class="rating">
                     <star-outline :size="25"/>
@@ -30,9 +56,6 @@ import StarOutline from 'vue-material-design-icons/StarOutline.vue'
                 <p>R$27,00</p>
             </div>
 
-        </div>
-        <div class="add">
-            <button>+</button>
         </div>
     </div>
 </template>
