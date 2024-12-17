@@ -35,13 +35,16 @@ import Magnify from 'vue-material-design-icons/Magnify.vue';
 <style scoped>
 header {
     display: flex;
+    position: sticky;
+    top: 0;
     flex-direction: row; 
     justify-content: space-between;
     align-items: center;
     padding: 0 2vw; 
     background-color: #F1F1F1;
     height: 8vh;
-    margin: 0.3%;
+    width: 97%;
+    margin: 0.3% 0 2% 0.45%;
     border-radius: 10px;
     box-shadow: 0 0 7px black;
 }
