@@ -53,7 +53,7 @@ import StarOutline from 'vue-material-design-icons/StarOutline.vue';
             <div class="buy">
                 <button>Comprar</button>
             </div>
-        </div>// Usando uma função para retornar o valor padrão
+        </div>
     </main>
 </template>
 
