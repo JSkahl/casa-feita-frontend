@@ -9,13 +9,17 @@ export function useScreen() {
     browserWidth.value = window.innerWidth;
     deviceWidth.value = screen.width;
     isMobile.value = window.innerWidth < 768;
+
+    console.log(isMobile)
   };
 
   onMounted(() => {
+    onBrowserResize()
     window.addEventListener('resize', onBrowserResize);
   });
 
   onUnmounted(() => {
+    onBrowserResize()
     window.removeEventListener('resize', onBrowserResize);
   });
 
