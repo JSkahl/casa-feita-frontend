@@ -1,4 +1,5 @@
 <script setup>
+
 import DefaultHome from '@/components/home/DefaultHome.vue';
 </script>
 
