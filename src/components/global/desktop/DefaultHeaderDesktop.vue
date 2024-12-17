@@ -37,14 +37,12 @@ header {
     display: flex;
     position: sticky;
     top: 0;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 2vw; 
     background-color: #F1F1F1;
     height: 8vh;
-    width: 97%;
-    margin: 0.3% 0 2% 0.45%;
-    border-radius: 10px;
+    width: 100%;
     box-shadow: 0 0 7px black;
 }
 
@@ -59,6 +57,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: auto; 
+    gap: 2vh;
+    
 }
 
 .pesquisa {
@@ -122,6 +122,8 @@ header {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    gap: 2vh;
+
 }
 
 @media (max-width: 768px) {
