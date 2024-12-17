@@ -1,100 +1,142 @@
-<script setup>
+<script>
+import { ref } from 'vue';
+import banner from '@/assets/banner.png'; 
+import DefaultProductCardDesktop from "../../product/desktop/DefaultProductCardDesktop.vue"; 
+
+export default {
+  name: "HomePageLayout",
+  components: {
+    DefaultProductCardDesktop, 
+  },
+  setup() { 
+    const bannerImage = ref(banner); 
+
+    return {
+      bannerImage,
+    };
+  },
+};
 </script>
 
 <template>
-
   <section class="promo-banner">
-    aaa
     <div class="image">
+      <img :src="bannerImage" alt="Banner" class="banner-image" />
     </div>
   </section>
 
   <section class="grid">
     <div class="row">
-      <div v-for="item in 4" :key="'top-' + item" class="card">
-        aa
+      <div v-for="item in [1, 2, 3, 4]" :key="'top-' + item" class="card">
+        <DefaultProductCardDesktop />
       </div>
     </div>
-    <div class="row row-bottom">
-      <div v-for="item in 4" :key="'bottom-' + item" class="card">
-        aa
+    <div class="row">
+      <div v-for="item in [1, 2, 3, 4]" :key="'bottom-' + item" class="card">
+        <DefaultProductCardDesktop />
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-
 .promo-banner {
   background-color: #585274;
   border-radius: 20px;
-  padding: 20px;
-  text-align: center;
+  padding: 0;
   margin: 20px auto;
-  width: 1156px;
-  height: 337px;
+  width: 90%;
+  max-width: 1156px;
+  height: 40vh;  
+  box-sizing: border-box;
 }
 
 .promo-banner .image {
-  width: 40%;
-  float: right;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.promo-banner .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .grid {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-top: 40px; 
+  gap: 20px;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  padding: 0 5%;
 }
 
 .row {
   display: flex;
   gap: 20px;
   justify-content: center;
-}
-
-.row-bottom {
-  margin-top: 10px; 
+  flex-wrap: wrap;
 }
 
 .card {
-  background-color: #fff;
+  background-color: #FEFFD0;
   border-radius: 8px;
-  width: 237px;
-  height: 393px;
+  width: 22vw;  
+  height: 30vh;  
+  min-width: 200px; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .promo-banner {
-    width: 90%;
-    height: auto;
-    padding: 15px;
-    margin-top: 20px;
-  }
-
-  .promo-banner .image {
-    display: none; 
-  }
-
-  .grid {
-    gap: 20px;
-    margin-top: 30px;
-  }
-
-  .row {
-    flex-direction: column;
-    gap: 15px;
+    height: 35vh; 
   }
 
   .card {
-    width: 90%;
-    height: auto;
+    width: 22vw;  
+    height: 30vh;  
+  }
+}
+
+@media (max-width: 900px) {
+  .promo-banner {
+    width: 100%;
+    padding: 10px;
+    height: 40vh;
   }
 
-  .row-bottom {
-    margin-top: 20px;
+  .row {
+    justify-content: space-between;
   }
+
+  .card {
+    width: 45%; 
+    height: 35vh;  
+  }
+}
+
+@media (max-width: 600px) {
+  .promo-banner {
+    width: 100%;
+    padding: 10px;
+    height: 40vh; 
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%; 
+    height: 45vh;  
+
+  .promo-banner .image img {
+    border-radius: 10px; 
+  }
+}
 }
 </style>
